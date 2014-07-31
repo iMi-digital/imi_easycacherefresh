@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<config>
+    <!-- Define ACL for access to limited cahre management role. -->
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <imi_easycacherefresh translate="title"
+                                                  module="imi_easycacherefresh">
+                        <title>Limited Cache Management</title>
+                        <sort_order>91</sort_order>
+                    </imi_easycacherefresh>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>

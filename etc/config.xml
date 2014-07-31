@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <IMI_EasyCacheRefresh>
+            <version>0.1.0</version>
+        </IMI_EasyCacheRefresh>
+    </modules>
+    <global>
+        <models>
+            <imi_easycacherefresh>
+                <class>IMI_ViledaEasyCacheRefresh_Model</class>
+            </imi_easycacherefresh>
+        </models>
+        <blocks>
+            <imi_easycacherefresh>
+                <class>IMI_ViledaEasyCacheRefresh_Block</class>
+            </imi_easycacherefresh>
+        </blocks>
+        <helpers>
+            <imi_easycacherefresh>
+                <class>IMI_ViledaEasyCacheRefresh_Helper</class>
+            </imi_easycacherefresh>
+        </helpers>
+    </global>
+</config>
