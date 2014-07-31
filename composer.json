@@ -1,0 +1,15 @@
+{
+    "name": "imi/imi_easycacherefresh",
+    "license": "OSL-3.0",
+    "type": "magento-module",
+    "description": "Simplify cache management",
+    "require": {
+        "magento-hackathon/magento-composer-installer": "*"
+    },
+    "authors":[
+        {
+            "name":"iMi digital GmbH",
+            "email":"info@imi.de"
+        }
+    ]
+}
