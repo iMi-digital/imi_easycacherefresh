@@ -34,20 +34,27 @@ class IMI_EasyCacheRefresh_Model_Observer {
         }
     }
 
+    /**
+     * Gateway method for customizations / remove additional block
+     *
+     * @param Varien_Event_Observer $observer
+     * @throws Exception
+     */
     public function coreBlockAbstractToHtmlBefore(Varien_Event_Observer $observer)
     {
         $block = $observer->getBlock();
+        $fullAction = $block->getRequest()->getModuleName() . '_' . $block->getRequest()->getControllerName() . '_' . $block->getRequest()->getActionName();
+        if ($fullAction != 'admin_cache_index') {
+            return;
+        }
         if ($block instanceof Mage_Adminhtml_Block_Widget_Grid_Massaction) {
             $this->_customizeGrid($block);
         } elseif ($block instanceof Mage_Adminhtml_Block_Cache) {
             $this->_customizeMainBlock($block);
         } elseif ($block instanceof Mage_Adminhtml_Block_page) {
-            $fullAction = $block->getRequest()->getModuleName() . '_' . $block->getRequest()->getControllerName() . '_' . $block->getRequest()->getActionName();
-            if ($fullAction != 'admin_cache_index') {
-                return;
+            if (Mage::helper('imi_easycacherefresh')->isLimited()) {
+                $block->getChild('content')->unsetChild('cache.additional');
             }
-            $block->getChild('content')->unsetChild('cache.additional');
-
         }
     }
 
