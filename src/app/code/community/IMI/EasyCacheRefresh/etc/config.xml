@@ -8,18 +8,51 @@
     <global>
         <models>
             <imi_easycacherefresh>
-                <class>IMI_ViledaEasyCacheRefresh_Model</class>
+                <class>IMI_EasyCacheRefresh_Model</class>
             </imi_easycacherefresh>
         </models>
         <blocks>
             <imi_easycacherefresh>
-                <class>IMI_ViledaEasyCacheRefresh_Block</class>
+                <class>IMI_EasyCacheRefresh_Block</class>
             </imi_easycacherefresh>
         </blocks>
         <helpers>
             <imi_easycacherefresh>
-                <class>IMI_ViledaEasyCacheRefresh_Helper</class>
+                <class>IMI_EasyCacheRefresh_Helper</class>
             </imi_easycacherefresh>
         </helpers>
     </global>
+    <adminhtml>
+        <events>
+            <adminhtml_block_html_before>
+                <observers>
+                    <imi_easycacherefresh>
+                        <class>imi_easycacherefresh/observer</class>
+                        <method>adminhtmlBlockHtmlBefore</method>
+                        <type>singleton</type>
+                    </imi_easycacherefresh>
+                </observers>
+            </adminhtml_block_html_before>
+            <core_block_abstract_to_html_before>
+                <observers>
+                    <imi_easycacherefresh>
+                        <class>imi_easycacherefresh/observer</class>
+                        <method>coreBlockAbstractToHtmlBefore</method>
+                        <type>singleton</type>
+                    </imi_easycacherefresh>
+                </observers>
+            </core_block_abstract_to_html_before>
+        </events>
+    </adminhtml>
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <IMI_EasyCacheRefresh before="Mage_Adminhtml">IMI_EasyCacheRefresh_Adminhtml</IMI_EasyCacheRefresh>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
 </config>
