@@ -157,19 +157,16 @@ bereits bestehendes Shop-System benötigen.In diesem Fall bieten wir einen koste
 Screenshots
 -----------
 
+
 ACL Definition
-**************
 
 .. image:: doc/screenshots/permissions.png
 
 Full Permissions / Volle Rechte
-*******************************
 
 .. image:: doc/screenshots/full_view.png
 
 Limited Permissions / Eingeschränkte Rechte
-*******************************************
 
 .. image:: doc/screenshots/limited_view.png
-
 
