@@ -32,7 +32,7 @@ Compatibility
 Installation Instructions
 -------------------------
 
-1. Install using composer or modman.
+1. Install using Composer or Modman.
 
 Uninstallation
 --------------
@@ -74,7 +74,7 @@ Copyright
 About Us
 --------
 
-`iMi digital GmbH <(http://www.imi.de/>`_ offers several types of Magento related open source modules. If you are confrontated with any bugs, you may want to open an issue here.
+`iMi digital GmbH <http://www.imi-digital.de/>`_ offers several types of Magento related open source modules. If you are confrontated with any bugs, you may want to open an issue here.
 In need of support or an implementation of a modul in an existing system, `free to contact us <mailto:digital@iMi.de>`. In this case, we will provide full service support for a fee.
 Of course we provide development of closed-source moduls as well.
 
@@ -106,7 +106,7 @@ Kompatibilität
 Installation
 ------------
 
-1. Bitte via composer oder modman installieren.
+1. Bitte via Composer oder Modman installieren.
 
 Deinstallation
 --------------
@@ -116,14 +116,14 @@ Deinstallation
 Support
 -------
 
-Wenn Sie probleme mit der Extension haben, öffnen Sie bitte ein Support Ticket
+Wenn Sie probleme mit der Extension haben, öffnen Sie bitte ein Support Ticket auf
 `GitHub <https://github.com/iMi-digital/imi_easycacherefresh/issues>`_.
 
 Beitragen
 ---------
 
 Jeder Beitrag wird gerne gesehen. Der beste weg Code beizusteuern ist durch das öffnnen eines Pull Requests auf
-GitHub <https://help.github.com/articles/using-pull-requests>`_.
+`GitHub <https://help.github.com/articles/using-pull-requests>`_.
 
 Entwickler
 ----------
@@ -147,7 +147,7 @@ Copyright
 --------
 
 
-`iMi digital GmbH <(http://www.imi.de/>`_ bietet eine breite Auswahl an verschiedenen Open-Source-Module für Magento an.
+`iMi digital GmbH <http://www.imi-digital.de/>`_ bietet eine breite Auswahl an verschiedenen Open-Source-Module für Magento an.
 Beim Auftreten von Fragen oder Bugs kann hier sehr gerne ein Thread geöffnet werden.
 
 `Kontaktieren Sie uns <mailto:digital@iMi.de>`_ gerne, wenn Sie Support für die Implementierung eines Moduls in ein
