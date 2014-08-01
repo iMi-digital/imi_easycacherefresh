@@ -154,3 +154,10 @@ Beim Auftreten von Fragen oder Bugs kann hier sehr gerne ein Thread geöffnet we
 
 `Kontaktieren Sie uns` <mailto:digital@iMi.de>_ gerne, wenn Sie Support für die Implementierung eines Moduls in ein
 bereits bestehendes Shop-System benötigen.In diesem Fall bieten wir einen kostenpflichtigen Full-Service-Support an.
+
+Screenshots
+-----------
+
+.. image:: doc/screenshots/full_view.png
+.. image:: doc/screenshots/limited_view.png
+.. image:: doc/screenshots/permissions_view.png
