@@ -6,9 +6,12 @@
                 <children>
                     <system>
                         <children>
+                            <cache>
+                                <sort_order>-20</sort_order>
+                            </cache>
                             <limited_cache translate="title" module="imi_easycacherefresh">
                                 <title>Limited Cache Management</title>
-                                <sort_order>-1</sort_order>
+                                <sort_order>-10</sort_order>
                             </limited_cache>
                         </children>
                     </system>
