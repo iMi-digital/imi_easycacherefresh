@@ -56,7 +56,7 @@ GitHub <https://help.github.com/articles/using-pull-requests>`_.
 Developer
 ---------
 
-| iMi digital GmmbH
+| iMi digital GmbH
 | `http://www.imi-digital.de <http://www.imi-digital.de>`_
 
 License
