@@ -1,3 +1,4 @@
+======================================
 IMI_EasyCacheRefresh Magento Extension
 ======================================
 
@@ -81,7 +82,7 @@ Of course we provide development of closed-source moduls as well.
 
 
 IMI_EasyCacheRefresh Magento Modul
-======================================
+==================================
 
 Das Modul fügt dem Menü "System < Cache" einen Button "Refresh invalidated" hinzu um alle ungültig gewordenen Caches neu aufzubauen.
 Zusätzlich fügt es die ACL "limited cache management" hinzu für Benutzer welche Caches nur neu Aufbauen, jedoch nicht
