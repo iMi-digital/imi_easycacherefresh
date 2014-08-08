@@ -66,7 +66,8 @@ class IMI_EasyCacheRefresh_Adminhtml_CacheController extends Mage_Adminhtml_Cach
     {
         $action = $this->getRequest()->getActionName();
 
-        $limitedActions = array('index' , 'refreshInvalidated', 'massRefresh');
+        // TEMP $limitedActions = array('index' , 'refreshInvalidated', 'massRefresh');
+        $limitedActions = array('index' , 'refreshInvalidated', 'massRefresh', 'flushAll', 'flushSystem');
         $limitedAllowed = in_array($action, $limitedActions);
         return parent::_isAllowed() || ($this->_isLimited() && $limitedAllowed);
     }

@@ -77,10 +77,10 @@ class IMI_EasyCacheRefresh_Model_Observer {
      * @param Mage_Adminhtml_Block_Cache $block
      */
     protected function _customizeMainBlock(Mage_Adminhtml_Block_Cache $block) {
-        if (Mage::helper('imi_easycacherefresh')->isLimited()) {
+        /* TEMP DISABLED if (Mage::helper('imi_easycacherefresh')->isLimited()) {
             $block->removeButton('flush_magento');
             $block->removeButton('flush_system');
-        }
+        }*/
 
         $block->addButton('refresh_invalidated', array(
             'label'     => Mage::helper('imi_easycacherefresh')->__('Refresh Invalidated'),
