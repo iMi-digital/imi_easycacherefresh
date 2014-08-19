@@ -41,7 +41,9 @@ class IMI_EasyCacheRefresh_Adminhtml_CacheController extends Mage_Adminhtml_Cach
             }
         }
         if ($updatedTypes > 0) {
-            $this->_getSession()->addSuccess(Mage::helper('adminhtml')->__("%s cache type(s) refreshed.", $updatedTypes));
+            $this->_getSession()->addSuccess(
+                Mage::helper('adminhtml')->__("%s cache type(s) refreshed.", $updatedTypes)
+            );
         }
 
         $this->_redirect('*/*');

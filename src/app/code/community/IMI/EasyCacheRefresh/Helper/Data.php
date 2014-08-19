@@ -15,7 +15,8 @@
  * @package IMI_EasyCacheRefresh
  */
 
-class IMI_EasyCacheRefresh_Helper_Data extends Mage_Core_Helper_Abstract {
+class IMI_EasyCacheRefresh_Helper_Data extends Mage_Core_Helper_Abstract
+{
 
     /**
      * Do we only have the limited cache management?

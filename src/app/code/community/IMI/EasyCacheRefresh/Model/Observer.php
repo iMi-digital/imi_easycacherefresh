@@ -15,10 +15,12 @@
  * @package IMI_EasyCacheRefresh
  */
 
-class IMI_EasyCacheRefresh_Model_Observer {
+class IMI_EasyCacheRefresh_Model_Observer
+{
 
     /**
-     * Rewrite Permissions for the cache management menu entry if we have only limited cache control (menu entry to be shown)
+     * Rewrite Permissions for the cache management menu entry
+     * if we have only limited cache control (menu entry to be shown)
      */
     public function adminhtmlBlockHtmlBefore(Varien_Event_Observer $observer)
     {
@@ -43,7 +45,9 @@ class IMI_EasyCacheRefresh_Model_Observer {
     public function coreBlockAbstractToHtmlBefore(Varien_Event_Observer $observer)
     {
         $block = $observer->getBlock();
-        $fullAction = $block->getRequest()->getModuleName() . '_' . $block->getRequest()->getControllerName() . '_' . $block->getRequest()->getActionName();
+        $fullAction = $block->getRequest()->getModuleName() . '_'
+            . $block->getRequest()->getControllerName() . '_'
+            . $block->getRequest()->getActionName();
         if ($fullAction != 'admin_cache_index') {
             return;
         }
@@ -76,7 +80,8 @@ class IMI_EasyCacheRefresh_Model_Observer {
      *
      * @param Mage_Adminhtml_Block_Cache $block
      */
-    protected function _customizeMainBlock(Mage_Adminhtml_Block_Cache $block) {
+    protected function _customizeMainBlock(Mage_Adminhtml_Block_Cache $block)
+    {
         /* TEMP DISABLED if (Mage::helper('imi_easycacherefresh')->isLimited()) {
             $block->removeButton('flush_magento');
             $block->removeButton('flush_system');
