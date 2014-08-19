@@ -4,7 +4,6 @@
  * iMi Magento Module
  *
  * NOTICE OF LICENSE
-
  * This source file is subject to the Open Software License (OSL 3.0)
  * which is available through the world-wide-web at this URL:
  * http://opensource.org/licenses/osl-3.0.php
@@ -37,7 +36,6 @@ class IMI_EasyCacheRefresh_Adminhtml_CacheController extends Mage_Adminhtml_Cach
         $types = Mage::app()->getCacheInstance()->getInvalidatedTypes();
         if (!empty($types)) {
             foreach ($types as $type) {
-                $tags = Mage::app()->getCacheInstance()->cleanType($type->getId());
                 Mage::dispatchEvent('adminhtml_cache_refresh_type', array('type' => $type->getId()));
                 $updatedTypes++;
             }
