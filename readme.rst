@@ -1,3 +1,7 @@
+.. sectnum::
+
+.. contents:: Contents / Inhalt
+
 IMI_EasyCacheRefresh Magento Extension
 ======================================
 
@@ -91,6 +95,13 @@ an- oder ausschalten können sollen.
     -   Kein "Flush Magento Cache"
     -   Kein "Clear Cache Storeage"
     -   Keine Javascript/CSS & Media Flush Funktion
+    
+Fakten
+------
+
+-  version: 0.1.0
+-  `extension auf
+   GitHub <https://github.com/iMi-digital/imi_easycacherefresh>`_
 
 Anforderungen
 -------------
@@ -154,7 +165,7 @@ Beim Auftreten von Fragen oder Bugs kann hier sehr gerne ein Thread geöffnet we
 bereits bestehendes Shop-System benötigen.In diesem Fall bieten wir einen kostenpflichtigen Full-Service-Support an.
 
 Screenshots
------------
+===========
 
 
 ACL Definition
