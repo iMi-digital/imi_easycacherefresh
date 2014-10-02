@@ -36,6 +36,7 @@ class IMI_EasyCacheRefresh_Adminhtml_CacheController extends Mage_Adminhtml_Cach
         $types = Mage::app()->getCacheInstance()->getInvalidatedTypes();
         if (!empty($types)) {
             foreach ($types as $type) {
+                Mage::app()->getCacheInstance()->cleanType($type->getId());
                 Mage::dispatchEvent('adminhtml_cache_refresh_type', array('type' => $type->getId()));
                 $updatedTypes++;
             }
